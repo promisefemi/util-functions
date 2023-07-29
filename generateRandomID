@@ -1,0 +1,8 @@
+function generateId (length = 10) { // Default length is 10 Characters;
+  let result = '';
+  const chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  for (let i = length; i > 0; --i) { // eslint-disable-line
+    result += chars[Math.floor(Math.random() * chars.length)];
+  }
+  return result;
+};
